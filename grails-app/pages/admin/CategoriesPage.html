@@ -1,0 +1,32 @@
+<wicket:head>
+    <strong>Categories</strong>
+    <br/>
+    <br/>
+</wicket:head>
+<wicket:extend>
+
+    <table>
+        <tr>
+            <td>First Level</td>
+            <td>Second Level</td>
+            <td>Third Level</td>
+        </tr>
+        <span wicket:id="repeating">
+            <form wicket:id="categoriesForm">
+                <tr>
+                     <td><input type="text" wicket:id="firstLevel" /></td>
+                    <td><input type="text" wicket:id="secondLevel"/></td>
+                    <td><input type="text" wicket:id="thirdLevel"/></td>
+                     <td><a wicket:id="submitLink">Submit</a></td>
+                </tr>
+            </form>
+        </span>
+        <tr>
+            <td></td>
+            <td><a wicket:id="newCategoryLink">Create New Category</a></td>
+        </tr>
+
+       
+    </table>
+
+</wicket:extend>
